@@ -71,64 +71,6 @@ tabs.forEach(tab => {
 });
 
 
-// SERVICES MODAL
-const modalViews = document.querySelectorAll('.services_modal'),
-      modalBtns = document.querySelectorAll('.services_button'),
-      modalCloses = document.querySelectorAll('.services_modal-close');
-
-let modal = function(modalClick){
-    modalViews[modalClick].classList.add('active-modal');
-}
-
-modalBtns.forEach((modalBtn, i) => {
-    modalBtn.addEventListener('click', () => {
-        modal(i);
-    });
-});
-
-modalCloses.forEach((modalClose, i) => {
-    modalClose.addEventListener('click', () => {
-        modalViews[i].classList.remove('active-modal');
-    });
-});
-
-// PORTFOLIO SWIPER
-
-let swiperPortfolio = new Swiper('.portfolio_container', {
-    cssMode: true,
-    loop: true,
-
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-  });
-
-
-// TESTIMONIAL SWIPER
-let swiperTestimonial = new Swiper('.testimonial_container', {
-    loop: true,
-    grabCursor: true,
-    spaceBetween: 45,
-
-
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-      dynamicBullets: true,
-    },
-
-    breakpoints: {
-        568: {
-            slidesPerView: 2,
-        }
-    }
-  });
-
 //   SCROLL SECTIONS ACTIVE LINK
 const sections = document.querySelectorAll('section[id]');
 
@@ -219,17 +161,3 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-icon', getCurrentIcon());
 })
 
-// SEND EMAIL
-function sendEmail() {
-    Email.send({
-        Host : "smtp.elasticemail.com",
-        Username : "username",
-        Password : "password",
-        To : 'them@website.com',
-        From : "you@isp.com",
-        Subject : "This is the subject",
-        Body : "And this is the body"
-    }).then(
-      message => alert(message)
-    );
-}
