@@ -172,8 +172,8 @@ img {
 /* LAYOUT */
 .container {
   max-width: 768px;
-  margin-left: var(--mb-1-5);
-  margin-right: var(--mb-1-5);
+  padding-left: var(--mb-1-5);
+  padding-right: var(--mb-1-5);
 }
 
 .grid {
@@ -776,8 +776,8 @@ button[type="submit"] {
 /* For small devices */
 @media screen and (max-width: 567px) {
   .container {
-    margin-left: var(--mb-1);
-    margin-right: var(--mb-1);
+    padding-left: var(--mb-1);
+    padding-right: var(--mb-1);
   }
 
   .nav_menu {
