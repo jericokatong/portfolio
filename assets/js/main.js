@@ -92,7 +92,7 @@ window.addEventListener("scroll", scrollActive);
 
 // typing effect
 let i = 0;
-const text = "Web Developer";
+const text = "Backend Web Developer";
 let blankText = "";
 
 function typing() {

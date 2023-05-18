@@ -471,6 +471,11 @@ img {
   padding-left: 2.7rem;
 }
 
+.skills_list .backend {
+  row-gap: 0.2rem;
+  padding-left: 2.7rem;
+}
+
 .skills_titles {
   display: flex;
   justify-content: left;
