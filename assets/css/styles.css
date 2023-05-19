@@ -617,6 +617,14 @@ img {
   background-color: hsl(206, 19%, 7%);
 }
 
+.projects_data .live-coding-button {
+  background-color: hsl(0, 74%, 53%);
+}
+
+.projects_data .live-coding-button:hover {
+  background-color: hsl(0, 78%, 46%);
+}
+
 .projects_data .live-button {
   background-color: hsl(137, 57%, 41%);
 }
