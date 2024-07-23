@@ -1,5 +1,5 @@
 /* GOOGLE FONTS */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 /* VARIABLE CSS */
 :root {
@@ -22,7 +22,7 @@
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
 
   /* FONT */
-  --body-font: "Poppins", sans-serif;
+  --body-font: 'Poppins', sans-serif;
 
   --big-font-size: 2rem;
   --h1-font-size: 1.5rem;
@@ -149,7 +149,7 @@ img {
 }
 
 .section_title::after {
-  content: "";
+  content: '';
   display: block;
   text-align: center;
   align-items: center;
@@ -203,6 +203,9 @@ img {
 .nav_toggle {
   color: var(--title-color);
   font-weight: var(--font-medium);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav_logo:hover {
@@ -216,6 +219,23 @@ img {
 
 .nav_toggle:hover {
   color: var(--first-color);
+}
+
+.tools_items {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.tools_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+
+.icon-description {
+  display: block;
 }
 
 @media screen and (max-width: 767px) {
@@ -330,6 +350,7 @@ img {
 
 .home_description {
   margin-bottom: var(--mb-2);
+  text-align: justify;
 }
 
 /* BUTTONS */
@@ -394,7 +415,7 @@ img {
 }
 
 .about_description {
-  text-align: center;
+  text-align: justify;
   margin-bottom: var(--mb-2-5);
 }
 
@@ -437,8 +458,9 @@ img {
 
 .img-icon {
   width: 18px !important;
+  height: 30px;
   box-sizing: border-box;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .skills_icon,
@@ -635,7 +657,6 @@ img {
 
 .icon-description {
   font-size: 0.7rem;
-  margin-right: 15px;
 }
 
 /* CONTACT ME */
@@ -695,7 +716,7 @@ img {
   width: inherit !important;
 }
 
-button[type="submit"] {
+button[type='submit'] {
   outline: none;
   border: none;
   cursor: pointer;
@@ -1047,7 +1068,7 @@ button[type="submit"] {
   }
 
   .about_description {
-    text-align: initial;
+    text-align: justify;
   }
 
   .about_info {
